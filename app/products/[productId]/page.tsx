@@ -7,7 +7,7 @@ type Params = {
 
 export default function Page({ params }: { params: Params }) {
   const { productId } = params;
-  const product = Products[Number(productId)];
+  const product = Products[Number(productId) - 1];
 
   return (
     <ProductDescription
