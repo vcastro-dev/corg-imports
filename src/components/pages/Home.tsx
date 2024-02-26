@@ -13,9 +13,9 @@ export function Home() {
         />
       </div>
       <Container>
-        <>
-          <h1 className="text-2xl font-bold text-center">A Barkbusters</h1>
-          <p className="text-md text-center mt-4 text-gray-500">
+        <section className="mt-8">
+          <h1 className="text-2xl font-bold text-center mb-4">A Barkbusters</h1>
+          <p className="text-md text-center text-gray-500">
             A marca de protetores de mão BARKBUSTERS® foi inicialmente fabricada
             na Austrália em 1984. Nosso entusiasmo pela pilotagem de
             motocicletas tem contribuído para o desenvolvimento dos melhores
@@ -33,10 +33,56 @@ export function Home() {
             oferecer produtos que não apenas atendam, mas superem as
             expectativas dos motociclistas em todo o mundo.
           </p>
-        </>
-        <>
-          <h1 className="text-2xl font-bold text-center">Nossos Produtos</h1>
-        </>
+        </section>
+        <section className="mt-8">
+          <h1 className="text-2xl font-bold text-center mb-4">Produtos</h1>
+          <div className="flex flex-col gap-4">
+            <div className="flex gap-4">
+              <img
+                className="w-1/2 h-96"
+                src="https://via.placeholder.com/150"
+                alt="Barkbusters"
+              />
+              <div className="w-1/2 flex flex-col justify-center gap-4">
+                <h2 className="text-2xl font-bold">Produto 1</h2>
+                <p>Descrição do produto</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-1/2 flex flex-col justify-center gap-4">
+                <h2 className="text-2xl font-bold">Produto 1</h2>
+                <p>Descrição do produto</p>
+              </div>
+              <img
+                className="w-1/2 h-96"
+                src="https://via.placeholder.com/150"
+                alt="Barkbusters"
+              />
+            </div>
+            <div className="flex gap-4">
+              <img
+                className="w-1/2 h-96"
+                src="https://via.placeholder.com/150"
+                alt="Barkbusters"
+              />
+              <div className="w-1/2 flex flex-col justify-center gap-4">
+                <h2 className="text-2xl font-bold">Produto 1</h2>
+                <p>Descrição do produto</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-1/2 flex flex-col justify-center gap-4">
+                <h2 className="text-2xl font-bold">Produto 1</h2>
+                <p>Descrição do produto</p>
+              </div>
+              <img
+                className="w-1/2 h-96"
+                src="https://via.placeholder.com/150"
+                alt="Barkbusters"
+              />
+            </div>
+          </div>
+        </section>
       </Container>
     </div>
   );
