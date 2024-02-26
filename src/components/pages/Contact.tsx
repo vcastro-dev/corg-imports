@@ -4,8 +4,8 @@ import { Container } from "../ui/Container/Container";
 export function Contact() {
   return (
     <Container>
-      <h1 className="text-4xl font-bold text-center">Contact</h1>
-      <Card>
+      <h1 className="text-4xl font-bold text-center pt-32">Contact</h1>
+      {/* <Card>
         <form>
           <div className="grid grid-cols-1 gap-4">
             <input
@@ -30,7 +30,7 @@ export function Contact() {
             </button>
           </div>
         </form>
-      </Card>
+      </Card> */}
     </Container>
   );
 }
