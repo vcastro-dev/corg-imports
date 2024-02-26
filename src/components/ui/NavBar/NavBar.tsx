@@ -1,6 +1,6 @@
 import { Container } from "../Container/Container";
 
-export function Nav() {
+export function NavBar() {
   return (
     <nav className="flex items-center justify-between w-full p-4">
       <Container>
