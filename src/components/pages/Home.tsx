@@ -4,8 +4,8 @@ export function Home() {
   return (
     <Container>
       <>
-        <h1 className="text-4xl font-bold text-center">A Barkbusters</h1>
-        <p className="text-lg text-center mt-4">
+        <h1 className="text-2xl font-bold text-center">A Barkbusters</h1>
+        <p className="text-md text-center mt-4 text-gray-500">
           A marca de protetores de mão BARKBUSTERS® foi inicialmente fabricada
           na Austrália em 1984. Nosso entusiasmo pela pilotagem de motocicletas
           tem contribuído para o desenvolvimento dos melhores protetores de mão
@@ -24,7 +24,7 @@ export function Home() {
         </p>
       </>
       <>
-        <h1 className="text-4xl font-bold text-center mt-8">Nossos Produtos</h1>
+        <h1 className="text-2xl font-bold text-center">Nossos Produtos</h1>
       </>
     </Container>
   );
