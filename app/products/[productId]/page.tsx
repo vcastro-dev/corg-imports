@@ -7,14 +7,11 @@ type Params = {
 
 export default function Page({ params }: { params: Params }) {
   const { productId } = params;
-  const product = Products[Number(productId) - 1];
+  const product = Products.find((product) => product.id === Number(productId));
 
-  return (
-    <ProductDescription
-      product={{
-        ...product,
-        id: Number(productId),
-      }}
-    />
-  );
+  if (!product) {
+    return <div>Product not found</div>;
+  }
+
+  return <ProductDescription product={product} />;
 }

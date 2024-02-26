@@ -1,33 +1,82 @@
+import { Category } from "@/src/types/Category";
 import { Card } from "../../ui/Card/Card";
 
-export function FilterProducts() {
+type Props = {
+  onCategoryChange: (category: Category[]) => void;
+};
+
+const categories = [
+  "Grips",
+  "JET",
+  "EGO",
+  "VPS",
+  "Storm",
+  "CARBON",
+  "BBZ",
+  "Aero GP",
+  "BLG",
+];
+
+const kits = [
+  "Bike Specific Hardware Kits",
+  "Universal Hardware Kits",
+  "OEM Handguard Protectors",
+  "Handlebar Clamp Kits",
+  "Accessories & Spare Parts",
+  "Replacement Parts",
+  "MOTOCROSS",
+  "MINIBIKES",
+  "ATV",
+];
+
+export function FilterProducts({ onCategoryChange }: Props) {
+  const selectedCategories: string[] = [];
+
+  const handleCategoryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.checked) {
+      selectedCategories.push(e.target.value);
+    } else {
+      selectedCategories.splice(selectedCategories.indexOf(e.target.value), 1);
+    }
+
+    onCategoryChange(selectedCategories as Category[]);
+  };
+
   return (
     <Card>
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl font-bold">Filtros de produto</h2>
-        <h3 className="text-xl font-bold">Categorias</h3>
-
         <div className="flex flex-col">
           <div className="flex flex-col bg-baby-blue-eyes">
-            <p className="p-2">Filtro 1</p>
+            <p className="p-2">Produtos</p>
           </div>
 
           <ul className="flex flex-col">
-            <li className="p-2">Category 1</li>
-            <li className="p-2">Category 2</li>
-            <li className="p-2">Category 3</li>
+            {categories.map((category) => (
+              <li key={category} className="flex p-2 gap-2">
+                <input
+                  type="checkbox"
+                  name="category"
+                  value={category}
+                  onChange={(e) => handleCategoryChange(e)}
+                />
+                <label>{category}</label>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div className="flex flex-col">
           <div className="flex flex-col bg-baby-blue-eyes">
-            <p className="p-2">Filtro 2</p>
+            <p className="p-2">Kits & Peças</p>
           </div>
 
           <ul className="flex flex-col">
-            <li className="p-2">Price 1</li>
-            <li className="p-2">Price 2</li>
-            <li className="p-2">Price 3</li>
+            {kits.map((category) => (
+              <li key={category} className="flex p-2 gap-2">
+                <input type="checkbox" value={category} />
+                <label>{category}</label>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
