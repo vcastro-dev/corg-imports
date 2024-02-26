@@ -1,18 +1,13 @@
+import Image from "next/image";
 import { Container } from "../Container/Container";
 import { NavBar } from "../NavBar/NavBar";
 
 export function Header() {
   return (
-    <header className="shadow-md w-full bg-white">
+    <header className="shadow-md w-full bg-white py-2">
       <Container>
-        <div className="flex items-center w-full gap-4 p-4">
-          <div>
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Logo"
-              className="w-16 h-16 object-cover rounded-full"
-            />
-          </div>
+        <div className="flex items-center justify-between">
+          <Image src="/logo.jpg" alt="Logo" width={80} height={80} />
           <NavBar />
         </div>
       </Container>
