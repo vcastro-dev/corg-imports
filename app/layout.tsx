@@ -22,7 +22,7 @@ export default function RootLayout({
         <div className="fixed z-50 w-full">
           <Header />
         </div>
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen pt-16">{children}</main>
 
         <div>
           <Footer />
