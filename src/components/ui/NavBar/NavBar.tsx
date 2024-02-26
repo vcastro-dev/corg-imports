@@ -20,6 +20,12 @@ export function NavBar() {
           </Link>
           <Link
             className="mx-2 hover:bg-gray-200 rounded-md px-3 py-2"
+            href="/faq"
+          >
+            Perguntas frequentes
+          </Link>
+          <Link
+            className="mx-2 hover:bg-gray-200 rounded-md px-3 py-2"
             href="/contact"
             passHref
           >
