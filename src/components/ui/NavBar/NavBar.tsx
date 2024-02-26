@@ -12,7 +12,7 @@ export function NavBar() {
             <a href="/products">Produtos</a>
           </li>
           <li className="mx-2">
-            <a href="/contact">Contacto</a>
+            <a href="/contact">Contato</a>
           </li>
         </ul>
       </Container>
