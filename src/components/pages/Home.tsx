@@ -50,7 +50,7 @@ export function Home() {
             </div>
             <div className="flex gap-4">
               <div className="w-1/2 flex flex-col justify-center gap-4">
-                <h2 className="text-2xl font-bold">Produto 1</h2>
+                <h2 className="text-2xl font-bold">Produto 2</h2>
                 <p>Descrição do produto</p>
               </div>
               <img
@@ -66,13 +66,13 @@ export function Home() {
                 alt="Barkbusters"
               />
               <div className="w-1/2 flex flex-col justify-center gap-4">
-                <h2 className="text-2xl font-bold">Produto 1</h2>
+                <h2 className="text-2xl font-bold">Produto 3</h2>
                 <p>Descrição do produto</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="w-1/2 flex flex-col justify-center gap-4">
-                <h2 className="text-2xl font-bold">Produto 1</h2>
+                <h2 className="text-2xl font-bold">Produto 4</h2>
                 <p>Descrição do produto</p>
               </div>
               <img
