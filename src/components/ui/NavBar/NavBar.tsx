@@ -9,7 +9,7 @@ export function NavBar() {
             <a href="/">Home</a>
           </li>
           <li className="mx-2">
-            <a href="/products">Productos</a>
+            <a href="/products">Produtos</a>
           </li>
           <li className="mx-2">
             <a href="/contact">Contacto</a>
