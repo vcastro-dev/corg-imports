@@ -34,7 +34,7 @@ export function ProductsPage() {
 
   return (
     <Container>
-      <h1 className="text-4xl font-bold text-center">Products</h1>
+      <h1 className="text-4xl font-bold text-center pt-32">Products</h1>
       <div className="flex flex-row gap-4">
         <FilterProducts onCategoryChange={onFilter} />
         <GalleryProducts products={filteredProducts} />
