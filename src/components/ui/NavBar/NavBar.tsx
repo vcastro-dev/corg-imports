@@ -9,13 +9,10 @@ export function NavBar() {
             <a href="/">Home</a>
           </li>
           <li className="mx-2">
-            <a href="/products">Products</a>
+            <a href="/products">Productos</a>
           </li>
           <li className="mx-2">
-            <a href="/about">About</a>
-          </li>
-          <li className="mx-2">
-            <a href="/contact">Contact</a>
+            <a href="/contact">Contacto</a>
           </li>
         </ul>
       </Container>
