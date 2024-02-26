@@ -44,10 +44,10 @@ export function FilterProducts({ onCategoryChange }: Props) {
 
   return (
     <Card>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 p-4 w-72">
         <div className="flex flex-col">
           <div className="flex flex-col bg-baby-blue-eyes">
-            <p className="p-2">Produtos</p>
+            <p className="p-2 font-semibold">Categorias</p>
           </div>
 
           <ul className="flex flex-col">
@@ -59,7 +59,7 @@ export function FilterProducts({ onCategoryChange }: Props) {
                   value={category}
                   onChange={(e) => handleCategoryChange(e)}
                 />
-                <label>{category}</label>
+                <label className="text-sm">{category}</label>
               </li>
             ))}
           </ul>
@@ -67,14 +67,14 @@ export function FilterProducts({ onCategoryChange }: Props) {
 
         <div className="flex flex-col">
           <div className="flex flex-col bg-baby-blue-eyes">
-            <p className="p-2">Kits & Peças</p>
+            <p className="p-2 font-semibold">Kits & Peças</p>
           </div>
 
           <ul className="flex flex-col">
             {kits.map((category) => (
               <li key={category} className="flex p-2 gap-2">
                 <input type="checkbox" value={category} />
-                <label>{category}</label>
+                <label className="text-sm">{category}</label>
               </li>
             ))}
           </ul>
