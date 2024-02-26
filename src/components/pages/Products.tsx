@@ -16,13 +16,18 @@ export function ProductsPage() {
   const [filteredProducts, setFilteredProducts] = useState(Products);
 
   const onFilter = (category: Category[]) => {
-    let filtered = Products;
-
-    if (category.length > 0) {
-      category.forEach((c) => {
-        filtered = filterProducts(filtered, c);
-      });
+    if (category.length === 0) {
+      setFilteredProducts(Products);
+      return;
     }
+
+    const filtered = category.reduce(
+      (acc: Product[], curr: Category) => [
+        ...acc,
+        ...filterProducts(Products, curr),
+      ],
+      []
+    );
 
     setFilteredProducts(filtered);
   };
