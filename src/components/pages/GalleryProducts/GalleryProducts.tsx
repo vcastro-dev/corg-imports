@@ -10,6 +10,7 @@ export function GalleryProducts() {
           image={product.image}
           title={product.description}
           description={product.description}
+          id={product.id}
         />
       ))}
     </div>
